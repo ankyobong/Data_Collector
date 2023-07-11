@@ -5,8 +5,28 @@
 </head>
 <body>
     <h1>Enter a Value</h1>
-    <form action="/submit" method="post">
-        <input type="text" name="value" required>
+    <form action="/questdb/device/items" method="post">
+        <label for="containmentId">containmentId:</label>
+        <input type="text" id="containmentId" name="containmentId"><br><br>
+
+        <label for="deviceId">deviceId:</label>
+        <input type="text" id="deviceId" name="deviceId"><br><br>
+
+        <label for="manufacturer">manufacturer:</label>
+        <input type="text" id="manufacturer" name="manufacturer"><br><br>
+
+        <label for="model">model:</label>
+        <input type="text" id="model" name="model"><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="port">port:</label>
+        <input type="text" id="port" name="port"><br><br>
+
+        <label for="rackRowId">rackRowId:</label>
+        <input type="text" id="rackRowId" name="rackRowId"><br><br>
+
         <button type="submit">Submit</button>
     </form>
 </body>
